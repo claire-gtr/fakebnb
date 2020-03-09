@@ -1,12 +1,14 @@
 require "application_system_test_case"
 
 class FlatsTest < ApplicationSystemTestCase
+  # TESTING HOMEPAGE
   test "visiting the index" do
     visit '/'
 
     assert_selector "h1", text: "Flats"
   end
 
+  # TESTING SHOW PAGE FOR ONE EXAMPLE
   test "visiting the show page" do
     visit '/flats/145'
 
